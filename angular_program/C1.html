@@ -1,0 +1,47 @@
+<!-- 
+* This is a basic code of html using angular.
+* 
+* Created by Ajitej Kaushik
+* Backend Dev @Medzin
+*
+* The code contains basic use of ng directives, filters in angular.js
+* The controller for this code is js/controllers/controller_C1.js
+*
+* This code depicts a simple example of data binding.
+*
+* In order to run this file, copy the file to root folder, and rename it to index.html, for better understanding.
+-->
+<html data-ng-app="app">
+<head>
+    <title>Angular Project C1</title>
+</head>
+<body>
+    <div ng-controller="myCtrl">
+        <input type="text" ng-model ='name'>
+        name : {{name}}
+        <select ng-model='OrderData'>
+            <option value="name">Name</option>
+            <option value="gender">Gender</option>
+        </select>
+        
+        <label>Ascending
+        	<input type="radio" name="direction" ng-model="direction" checked>	
+        </label> 
+        
+        <label>Descending
+        	<input type="radio" name="direction" ng-model="direction" value="reverse">	
+        </label>
+        
+        <div >
+                <p  ng-repeat = "n in names | filter:name | orderBy: OrderData:direction">
+                    {{n.name | lowercase}}
+                    {{n.gender}} 
+                    <img ng-src="{{n.picture}}">
+                </p>
+         </div> 
+    </div>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="js/controllers/controllers_C1.js"></script>
+</body>
+</html>
+

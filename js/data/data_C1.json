@@ -1,0 +1,27 @@
+[
+  {
+    "picture": "http://placehold.it/32x32",
+    "name": "Bernadette Perez",
+    "gender": "female"
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "name": "Ila Cooper",
+    "gender": "female"
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "name": "Sadie Eaton",
+    "gender": "female"
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "name": "Alyce Ellison",
+    "gender": "female"
+  },
+  {
+    "picture": "http://placehold.it/32x32",
+    "name": "Pearson Sellers",
+    "gender": "male"
+  }
+]
